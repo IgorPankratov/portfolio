@@ -1,5 +1,5 @@
-@import "libs/_bootstrap-reboot.min.scss";
-@import "libs/_fonts.scss";
+@import "libs/bootstrap-reboot.min.scss";
+@import "libs/fonts.scss";
 
 @import "base/variables";
 @import "base/mixins";
@@ -18,7 +18,7 @@
     width: 60px;
     height: 3px;
     background: $main-color;
-    margin-top: 25px;
+    margin: 25px auto 0 auto;
 }
 
 @import "blocks/promo";
@@ -27,3 +27,4 @@
 @import "blocks/sidepanel";
 @import "blocks/menu";
 @import "blocks/about";
+@import "blocks/resume";
