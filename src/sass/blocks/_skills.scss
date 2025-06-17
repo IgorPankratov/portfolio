@@ -2,21 +2,6 @@
   padding-top: 126px;
   // margin: 0 10px;
 
-  &__title {
-    padding-left: 0;
-    text-align: center;
-    position: relative;
-    @include before_circle;
-    &:before {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  &__subtitle {
-    text-align: center;
-  }
-
   &__wrapper {
     margin-top: 60px;
     display: grid;
