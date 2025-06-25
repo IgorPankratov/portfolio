@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {
+@media (max-width: 1439px) {
   .container {
     max-width: 960px;
   }
@@ -7,9 +7,48 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .about {
+    &__wrapper {
+      grid-template-columns: 400px 520px;
+      column-gap: 40px;
+    }
+    &__skills {
+      column-gap: 20px;
+      &-item {
+        grid-template-columns: 40px 195px;
+        column-gap: 15px;
+      }
+
+    }
+  }
+  
+}
+
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
+  }
+  .title {
+    &_fz36 {
+      font-size: 30px;
+    }
+  }
+  .about {
+    &__wrapper {
+      grid-template-columns: 300px 380px;
+    }
+    &__skills {
+      grid-template-columns: 380px;
+      grid-auto-rows: minmax(115px, auto);
+      &-item {
+        grid-template-columns: 40px 320px;
+        column-gap: 20px;
+      }
+    }
   }
 }
 
@@ -28,6 +67,22 @@
       line-height: 39px;
     }
   }
+  .about {
+    padding-top: 40px;
+    &__wrapper {
+      grid-template: 400px auto auto/ 1fr ;
+    }
+    &__photo {
+      grid-row: unset;
+    }
+    &__skills {
+      grid-template-columns: repeat(2, 260px);
+      &-item {
+        grid-template-columns: 40px 200px;
+        column-gap: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -38,6 +93,9 @@
   .title {
     &_fz48 {
       font-size: 26px;
+    }
+    &_fz36 {
+      font-size: 24px;
     }
   }
   .hamburger {
@@ -53,6 +111,21 @@
     background: url("../img/main_bg.jpg") no-repeat 57% / cover;
     &__btns {
       margin-top: 30px;
+    }
+  }
+  .about {
+    &__wrapper {
+      grid-template: 340px auto auto/ 1fr ;
+    }
+    &__photo {
+      grid-row: unset;
+    }
+    &__skills {
+      grid-template-columns: 1fr;
+      &-item {
+        grid-template-columns: 40px 200px;
+        column-gap: 20px;
+      }
     }
   }
 }
