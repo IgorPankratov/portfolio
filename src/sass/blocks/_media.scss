@@ -127,6 +127,7 @@
     }
     &_fz36 {
       font-size: 24px;
+      line-height: 36px;
     }
   }
   .hamburger {
@@ -140,6 +141,9 @@
   }
   .promo {
     background: url("../img/main_bg.jpg") no-repeat 57% / cover;
+    &__title {
+      width: 90%;
+    }
     &__btns {
       margin-top: 30px;
     }
@@ -189,4 +193,23 @@
       }
     }
   }
+  .skills {
+    padding-top: 40px;
+    &__wrapper {
+      margin-top: 20px;
+      grid-template-columns: 1fr;
+    }
+    &__ratings {
+      margin-top: 60px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, minmax(70px, auto));
+      &-line {
+          width: 300px;
+      }
+
+
+    }
+  }
 }
+
+
