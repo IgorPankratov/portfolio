@@ -68,6 +68,19 @@
       }
     }
   }
+  .contacts {
+    &__wrapper {
+      grid-template-columns: 350px 470px;
+      column-gap: 15px;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(2, 230px);
+      column-gap: 10px;
+    }
+    &__btn {
+      font-size: 13px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -121,6 +134,15 @@
       grid-template-columns: repeat(auto-fit, 300px);
       padding: 0;
     }
+  }
+  .contacts {
+    padding-top: 60px;
+    // &__wrapper {
+    //   grid-template-columns: auto-fit;
+    // }
+    // &__photo {
+    //   display: none;
+    // }
   }
 }
 
