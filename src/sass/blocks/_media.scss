@@ -18,6 +18,19 @@
       }
     }
   }
+  .contacts {
+    &__wrapper {
+      grid-template-columns: 350px 470px;
+      column-gap: 15px;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(2, 230px);
+      column-gap: 10px;
+    }
+    &__btn {
+      font-size: 13px;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
@@ -68,19 +81,19 @@
       }
     }
   }
-  .contacts {
-    &__wrapper {
-      grid-template-columns: 350px 470px;
-      column-gap: 15px;
-    }
-    &__form {
-      grid-template: 45px 190px 45px / repeat(2, 230px);
-      column-gap: 10px;
-    }
-    &__btn {
-      font-size: 13px;
-    }
-  }
+  // .contacts {
+  //   &__wrapper {
+  //     grid-template-columns: 350px 470px;
+  //     column-gap: 15px;
+  //   }
+  //   &__form {
+  //     grid-template: 45px 190px 45px / repeat(2, 230px);
+  //     column-gap: 10px;
+  //   }
+  //   &__btn {
+  //     font-size: 13px;
+  //   }
+  // }
 }
 
 @media (max-width: 992px) {
@@ -140,9 +153,9 @@
     // &__wrapper {
     //   grid-template-columns: auto-fit;
     // }
-    // &__photo {
-    //   display: none;
-    // }
+    &__photo {
+      display: none;
+    }
   }
 }
 
@@ -153,6 +166,9 @@
   .title {
     &_fz48 {
       font-size: 28px;
+    }
+    &_fz36 {
+      font-size: 24px;
     }
   }
   .promo {
@@ -209,6 +225,16 @@
     &__wrapper {
       margin-top: 20px;
       justify-content: center;
+    }
+  }
+  .contacts {
+    padding-top: 40px;
+    &__wrapper {
+      padding: 0;
+      grid-template-columns: 1fr;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(2, 240px);
     }
   }
 }
@@ -301,10 +327,36 @@
     }
     &__item {
       &-title {
-        &:before{
+        &:before {
           display: none;
         }
       }
+    }
+  }
+  .contacts {
+    padding-bottom: 50px;
+    &__form {
+      grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+    }
+    &__textarea {
+      grid-column: unset;
+      width: 100%;
+    }
+    &__triggers {
+      grid-column: unset;
+      grid-template-columns: 1fr;
+      column-gap: unset;
+      row-gap: 20px;
+    }
+    &__btn {
+      order: 2;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+    &__policy {
+      width: 180px;
+      margin: 0 auto;
+      line-height: 18px;
     }
   }
 }
